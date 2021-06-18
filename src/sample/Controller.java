@@ -13,10 +13,10 @@ public class Controller {
     @FXML
     TextField msgField;
     @FXML
-    Button send;
+    Button send_1;
 
 
-    public void keyPress(KeyEvent keyEvent){
+    public void send(KeyEvent keyEvent){
         if (keyEvent.getCode() == KeyCode.ENTER){
             mainT.appendText(msgField.getText() + "\n");
             msgField.clear();
