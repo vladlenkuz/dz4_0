@@ -11,8 +11,8 @@
       fx:controller="sample.Controller">
     <TextArea fx:id="mainT" editable="false" VBox.vgrow="ALWAYS"></TextArea>
     <HBox>
-        <TextField onAction="#keyPress" fx:id="msgField" HBox.hgrow="ALWAYS" onKeyPressed="#keyPress"/>
-        <Button fx:id="send" onKeyPressed="#keyPress" >Отправить</Button>
+        <TextField onAction="#send" fx:id="msgField" HBox.hgrow="ALWAYS" onKeyPressed="#send"/>
+        <Button fx:id="send_1" onKeyPressed="#send" >Отправить</Button>
     </HBox>
 
 </VBox>
