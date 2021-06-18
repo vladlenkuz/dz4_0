@@ -1,0 +1,18 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="center" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
+    <TextArea fx:id="mainT" editable="false" VBox.vgrow="ALWAYS"></TextArea>
+    <HBox>
+        <TextField onAction="#keyPress" fx:id="msgField" HBox.hgrow="ALWAYS" onKeyPressed="#keyPress"/>
+        <Button fx:id="send" onKeyPressed="#keyPress" >Отправить</Button>
+    </HBox>
+
+</VBox>
